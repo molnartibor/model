@@ -1,4 +1,5 @@
 <h1><%= @pic.title %></h1>
+<%= image_tag @pic.image.url %>
 <p><%= @pic.description %></p>
 <p>Picture from:
     <%= @pic.user.email %></p>
