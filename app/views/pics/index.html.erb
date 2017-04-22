@@ -4,6 +4,8 @@
         <div class="box panel panel-default">
             <%= link_to (image_tag pic.image.url), pic %>
             <h2><%= link_to pic.title, pic %></h2>
+            <p><%= truncate(pic.description, length: 50 ) %></p>
+            <p>Created at: <%= time_ago_in_words(pic.user.created_at) %> ago</p>
         </div>
         <% end %>
     </div> 

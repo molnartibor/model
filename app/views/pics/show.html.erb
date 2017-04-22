@@ -11,6 +11,7 @@
             <div class="panel-footer">
                 <div class="row">
                     <div class="col-xs-6">
+                        <p class="user">Created at: <%= time_ago_in_words(@pic.user.created_at) %> ago </p>
                         <p class="user">Picture from: <%= @pic.user.email %></p>
                     </div>
                     <div class="col-xs-6">
